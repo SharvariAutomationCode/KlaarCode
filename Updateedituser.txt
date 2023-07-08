@@ -1,0 +1,68 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://dev.klaarhq.com/')
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/p_Log in with klaar (5)'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_Email or Phone Number_email-field (5)'), 'deepa.nayak@gamma.klaar.team')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Klaar/input_Password_password-field (5)'), 'VGop5tja02907IfbMyQqYA==')
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/svg (4)'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/button_Log in (3)'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_Password_password-field_1 (2)'), 'Klaar2021')
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/button_Log in (3)'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/svg_1 (2)'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/a_User List (3)'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/td_rajugmail.com'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_Phone Number_input-gc ant-input ng-un_35290c'), '9032409512')
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_Personal Email_ant-input ng-untouched_f940e2'), 'klaar')
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_National ID Number_ant-input ng-untou_011356'), '1234')
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/span_Save'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/nz-form-label_Personal Email'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_Personal Email_ant-input ng-untouched_f940e2'), '')
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_National ID Number_ant-input ng-untou_011356'), '1234')
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/label_National ID Number'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_National ID Number_ant-input ng-untou_011356'), '')
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/span_Save'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/a_User List (3)'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/td_rajugmail.com'))
+
+WebUI.closeBrowser()

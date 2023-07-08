@@ -1,0 +1,126 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://dev.klaarhq.com/')
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/div_Log inLog in with GoogleLog in with Mic_9e2756 (2)'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/p_Log in with klaar (3)'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_Email or Phone Number_email-field (3)'), 'deepa.nayak@gamma.klaar.team')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Klaar/input_Password_password-field (3)'), 'cfPVIOY1hZsQEbt9TvWBHw==')
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/span_Log in (3)'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/svg (3)'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/a_User List (1)'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/span_Add'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/li_Add User'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/nz-input-group_Full Name_ng-tns-c194-80 ant_f2cbec'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_Full Name_input-gc-name ant-input ng-_0897a6'), 'sharvari')
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/input_Hey there_ant-checkbox-input ng-untou_e5a88a'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_Email_input-gc-name ant-input ng-unto_589e74'), 'sharvari@gmail.com')
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_Department_ant-select-selection-searc_e4187c'), '')
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/input_Department_ant-select-selection-searc_e4187c_1'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/div_Software'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/nz-select-item_Software'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/div_Automation Test Engineer'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/input_Title_ant-select-selection-search-inp_70d8ed'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/nz-option-item_QA'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/div_QA'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/input_Manager_ant-select-selection-search-i_6475fa'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/div_Angel Paswan (angel.paswangamma.klaar.team)'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_User ID_input-gc ant-input ng-untouch_b8dc9c'), '1234')
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/input_Hey there_ant-checkbox-input ng-untou_e5a88a'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_Location_input-gc ant-input ng-untouc_f542bc'), 'pune')
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_User ID_input-gc ant-input ng-untouch_b8dc9c'), '4060')
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_HRBP_ant-select-selection-search-inpu_18ff1c'), '')
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/input_HRBP_ant-select-selection-search-inpu_18ff1c_1'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/div_Anirudh Thakur (anirudh.thakurgamma.kla_d7215f'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/span_Add Now'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/span_Add'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/li_Add User'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_Full Name_input-gc-name ant-input ng-_0897a6'), 'Sharvari kamble')
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/nz-input-group_Email_ng-tns-c194-96 ant-inp_d8aacb'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_Email_input-gc-name ant-input ng-unto_589e74'), 'sharvarikamble123@gmail.com')
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_Department_ant-select-selection-searc_e4187c_1_2'), '')
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/input_Department_ant-select-selection-searc_e4187c_1_2_3'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/div_Automation Test Engineer'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/input_Title_ant-select-selection-search-inp_70d8ed_1'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/div_QA'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/input_Manager_ant-select-selection-search-i_6475fa_1'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/div_deepa.nayakgamma.klaar.team (deepa.naya_effd91'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_User ID_input-gc ant-input ng-untouch_b8dc9c'), '4060')
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_Location_input-gc ant-input ng-untouc_f542bc'), 'pune')
+
+WebUI.setText(findTestObject('Object Repository/Page_Klaar/input_HRBP_ant-select-selection-search-inpu_18ff1c_1_2'), '')
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/input_HRBP_ant-select-selection-search-inpu_18ff1c_1_2_3'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/div_deepa.nayakgamma.klaar.team (deepa.naya_effd91'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/input_Hey there_ant-checkbox-input ng-untou_e5a88a'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/input_Hey there_ant-checkbox-input ng-untou_e5a88a'))
+
+WebUI.click(findTestObject('Object Repository/Page_Klaar/span_Add Now'))
+
+WebUI.closeBrowser()
